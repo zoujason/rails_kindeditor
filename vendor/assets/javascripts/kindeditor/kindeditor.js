@@ -9792,7 +9792,6 @@ KindEditor.plugin('table', function(K) {
             for (var i = cell.rowSpan - 1; i >= 0; i--) {
                 table.deleteRow(rowIndex + i);
             }
-
             if (table.rows.length === 0) {
                 self.cmd.range.setStartBefore(table).collapse(true);
                 self.cmd.select();
